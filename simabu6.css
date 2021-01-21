@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+}
+aside {
+  width: 25%;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+aside nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+main {
+  width: 700px;
+  margin: 0 auto;
+  /* flex: 1; */
+}
+aside div {
+  height: 300px;
+  margin-top: auto;
+}
