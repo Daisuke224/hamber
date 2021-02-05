@@ -40,7 +40,7 @@ div a {
   text-decoration: none;
   color: rgb(82, 78, 78);
   font-weight: 600;
-  font-size: 18px;
+  font-size: 20px;
 }
 .star {
   margin-top: 8px;
@@ -69,7 +69,7 @@ div a {
 /* ハンバーガーメニュー */
 
 .link {
-  margin: 100px auto;
+  margin: 95px auto;
 }
 input[type="checkbox"] {
   position: absolute;
@@ -91,7 +91,7 @@ input[type="checkbox"] {
 }
 
 /* レスポンス対応 */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
   body {
     width: 100%;
     height: auto;
