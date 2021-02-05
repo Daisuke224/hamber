@@ -5,7 +5,8 @@ body {
 }
 main {
   width: 700px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  flex: 1;
 }
 aside {
   width: 25%;
@@ -16,12 +17,38 @@ aside {
 
 aside nav ul {
   list-style: none;
-  margin: 0;
+  margin: 30px 0 0 10px;
   padding: 0;
+}
+ul li {
+  font-weight: 700;
+  margin: 0 0 5px 8px;
+}
+
+nav a {
+  color: rgb(82, 78, 78);
+  text-decoration: none;
 }
 aside div {
   height: 300px;
   margin-top: auto;
+  margin-left: 16px;
+}
+div a {
+  text-decoration: none;
+  color: rgb(82, 78, 78);
+  font-weight: 600;
+}
+.star {
+  margin-top: 8px;
+  width: 95%;
+  height: auto;
+}
+.rogo {
+  margin: 8px;
+  width: 170px;
+  height: auto;
+  opacity: 0.8;
 }
 .ham {
   width: 30px;
@@ -34,12 +61,26 @@ aside div {
 .close {
   display: none;
 }
+.link {
+  margin: 100px auto;
+}
 input[type="checkbox"] {
   position: absolute;
   left: -50vw;
 }
-.star {
-  display: none;
+
+.copy {
+  width: 95%;
+  font-size: 1px;
+  text-align: right;
+}
+.wel {
+  margin: 0;
+  width: 88%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(82, 78, 78);
 }
 
 @media screen and (max-width: 1000px) {
@@ -66,7 +107,8 @@ input[type="checkbox"] {
     left: -300px;
     height: 100%;
     transition: all 0.2s;
-    background-image: url(lightgreen.jpeg);
+    background-image: url(btn.jpg);
+    opacity: 0.4;
   }
   input[type="checkbox"]:checked ~ aside {
     left: 0;
@@ -82,5 +124,36 @@ input[type="checkbox"] {
     width: 100%;
     max-width: 100%;
     height: auto;
+  }
+  ul li {
+    font-weight: 700;
+    margin-left: 5px;
+  }
+  nav p {
+    font-weight: 700;
+  }
+  .copy {
+    display: none;
+  }
+  .wel {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(82, 78, 78);
+    font-weight: 600;
+    margin: 0 auto;
+  }
+  .rogo {
+    width: 80px;
+    height: auto;
+  }
+  aside div {
+    margin-bottom: 150px;
+  }
+  aside div a {
+    text-decoration: none;
+    color: rgb(82, 78, 78);
+  }
+  .link {
+    margin: 0 auto;
   }
 }
