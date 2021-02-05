@@ -38,6 +38,9 @@ input[type="checkbox"] {
   position: absolute;
   left: -50vw;
 }
+.star {
+  display: none;
+}
 
 @media screen and (max-width: 1000px) {
   body {
@@ -75,6 +78,7 @@ input[type="checkbox"] {
     background: rgba(0, 0, 0, 0.8);
   }
   .star {
+    display: block;
     width: 100%;
     max-width: 100%;
     height: auto;
