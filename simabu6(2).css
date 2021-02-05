@@ -2,7 +2,7 @@ body {
   margin: 0;
   display: flex;
   min-height: 100vh;
-  background-image: url("../html/images/lightgreen.jpeg");
+  background-image: url("lightgreen.jpeg");
   background-size: 100%;
 }
 main {
@@ -66,7 +66,7 @@ input[type="checkbox"] {
     left: -300px;
     height: 100%;
     transition: all 0.2s;
-    background-image: url(../html/images/lightgreen.jpeg);
+    background-image: url(lightgreen.jpeg);
   }
   input[type="checkbox"]:checked ~ aside {
     left: 0;
