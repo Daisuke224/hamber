@@ -1,3 +1,4 @@
+/* 聖杯レイアウト */
 body {
   margin: 0;
   display: flex;
@@ -5,7 +6,6 @@ body {
 }
 main {
   width: 700px;
-  /* margin: 0 auto; */
   flex: 1;
 }
 aside {
@@ -17,15 +17,17 @@ aside {
 
 aside nav ul {
   list-style: none;
-  margin: 30px 0 0 10px;
+  margin: 20px 0 0 10px;
   padding: 0;
 }
 ul li {
-  font-weight: 700;
   margin: 0 0 5px 8px;
 }
+/* 聖杯レイアウト */
 
 nav a {
+  font-size: 25px;
+  font-weight: 700;
   color: rgb(82, 78, 78);
   text-decoration: none;
 }
@@ -38,6 +40,7 @@ div a {
   text-decoration: none;
   color: rgb(82, 78, 78);
   font-weight: 600;
+  font-size: 18px;
 }
 .star {
   margin-top: 8px;
@@ -48,8 +51,10 @@ div a {
   margin: 8px;
   width: 170px;
   height: auto;
-  opacity: 0.8;
+  opacity: 0.7;
 }
+
+/* ハンバーガーメニュー */
 .ham {
   width: 30px;
   height: auto;
@@ -61,6 +66,8 @@ div a {
 .close {
   display: none;
 }
+/* ハンバーガーメニュー */
+
 .link {
   margin: 100px auto;
 }
@@ -83,6 +90,7 @@ input[type="checkbox"] {
   color: rgb(82, 78, 78);
 }
 
+/* レスポンス対応 */
 @media screen and (max-width: 1000px) {
   body {
     width: 100%;
@@ -95,6 +103,8 @@ input[type="checkbox"] {
     width: 100%;
     padding-top: 40px;
   }
+
+  /* ハンバーガーメニュー */
   .ham,
   .close {
     display: block;
@@ -108,7 +118,7 @@ input[type="checkbox"] {
     height: 100%;
     transition: all 0.2s;
     background-image: url(btn.jpg);
-    opacity: 0.4;
+    opacity: 0.5;
   }
   input[type="checkbox"]:checked ~ aside {
     left: 0;
@@ -119,17 +129,21 @@ input[type="checkbox"] {
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
   }
+  /* ハンバーガーメニュー */
+
   .star {
     display: block;
     width: 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
     height: auto;
   }
   ul li {
     font-weight: 700;
     margin-left: 5px;
   }
-  nav p {
+  nav a {
+    font-size: 25px;
+    color: #000;
     font-weight: 700;
   }
   .copy {
@@ -143,17 +157,20 @@ input[type="checkbox"] {
     margin: 0 auto;
   }
   .rogo {
-    width: 80px;
+    width: 90px;
     height: auto;
+    margin-left: 16px;
   }
   aside div {
-    margin-bottom: 150px;
+    margin: 0 0 120px 16px;
   }
   aside div a {
     text-decoration: none;
-    color: rgb(82, 78, 78);
+    color: #000;
+    font-size: 20px;
   }
   .link {
     margin: 0 auto;
+    padding: 30px 10px 0 0;
   }
 }
